@@ -1,412 +1,628 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base href="https://comps.dbit.in/index.php/student/recognition" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Recognition</title>
+	<link href="/images/imageedit_1_2560433786.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/components/com_sppagebuilder/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_sppagebuilder/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_sppagebuilder/assets/css/sppagebuilder.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_sppagebuilder/assets/css/sppagecontainer.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jce/css/content.css?61e1a04a2dcac1ed91419ee1188fadb9" rel="stylesheet" type="text/css" />
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin" rel="stylesheet" type="text/css" />
+	<link href="/templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/shaper_helix3/css/presets/preset1.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="/plugins/system/helix3/assets/css/pagebuilder.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_sppagebuilder/assets/css/magnific-popup.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.sp-page-builder .page-content #section-id-1530510336413{padding-top: 50px;padding-right: 0px;padding-bottom: 250px;padding-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;}#column-id-1530510336412{box-shadow: 0 0 0 0 #fff;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1637146620336 {}}@media (max-width: 767px) {#sppb-addon-1637146620336 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336448 {}}@media (max-width: 767px) {#sppb-addon-1530510336448 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510810528 {}}@media (max-width: 767px) {#sppb-addon-1530510810528 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336442 {}}@media (max-width: 767px) {#sppb-addon-1530510336442 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336443 {}}@media (max-width: 767px) {#sppb-addon-1530510336443 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336416 {}}@media (max-width: 767px) {#sppb-addon-1530510336416 {}}
+body{font-family:Open Sans, sans-serif; font-weight:300; }
+h1{font-family:Open Sans, sans-serif; font-weight:800; }
+h2{font-family:Open Sans, sans-serif; font-weight:600; }
+h3{font-family:Open Sans, sans-serif; font-weight:normal; }
+h4{font-family:Open Sans, sans-serif; font-weight:normal; }
+h5{font-family:Open Sans, sans-serif; font-weight:600; }
+h6{font-family:Open Sans, sans-serif; font-weight:600; }
+#sp-header > div {
+  padding-left: 0px;
+  padding-right: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../style/main.css" />
-  <link rel="stylesheet" href="../style/nav.css" />
-  <link rel="stylesheet" href="/style/footer.css">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <title>Placement Records</title>
-  <script src="../temp.js" defer></script>
-</head>
+#sp-top2 > div > table > tbody > tr > td > ul > li > a {
+  color: white;
+}
+#sp-top2 > div > table > tbody > tr > td > ul > li > a:hover {
+  color: black;
+}
 
-<body>
-  <div id="navbar"></div>
-  <main class="conainer-fluid">
-    <div class="row px-5">
-      <div class="row justify-content-center text-center p-3">
-        <h1>Smart India Hackathon</h1>
-        <p>
-          The AICTE in association with MHRD & NIC have planned to host SMART
-          INDIA HACKATHON 2017, world biggest digital movement. The prime
-          objective was to involvetechnology students in the digital
-          revolution of India. The Government of India in association with29
-          ministries have proposed around 598 problem statements. The college
-          team, consisting of 6 member each with atleast 1 female candidate,
-          have to choose the problem statement and provide the solution. The
-          Hackthon was a grand success with 36 Hrs non-stop digital product
-          devlopment competition held on 1st and 2nd April, 2017. Around 40+
-          Thousand technology students and 2100+ technological institute
-          participated in this grand hackathon.
-        </p>
-      </div>
-      <div class="row justify-content-center text-center p-1 fw-bold">
-        <p>2017-2018</p>
-      </div>
-      <div class="col-md-4">
-        <table class="table table-hover table-responsive shadow-lg" style="border-collapse: collapse" border="0">
-          <tbody>
-            <tr class="table-dark">
-              <td colspan="2">
-                <p style="text-align: center"><strong>Team 1</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p><strong>Award:</strong></p>
-              </td>
-              <td>
-                <p><strong>Persistent Innovation Award</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Team Name:</strong></td>
-              <td>
-                <p>Irrational Reals</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Category:</strong></td>
-              <td>
-                <p>Ministry (Government of Goa)</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Statement:</strong></td>
-              <td>Full Immunisation Coverage</td>
-            </tr>
-            <tr>
-              <td><strong>Name Of Students:</strong></td>
-              <td>
-                <p>Tanvi Pandit</p>
-                <p>Aditya Hase</p>
-                <p>Arnab Sanyal</p>
-                <p>Shivam Mishra</p>
-                <p>Omkar Kadam</p>
-                <p>Premlata Pawar</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Mentors :</strong></td>
-              <td>
-                <p>Prasad Padalkar</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Venue:</strong></td>
-              <td>
-                <p>Nagpur</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Winning Price:</strong></td>
-              <td>
-                <p>₹ 10000/-</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-4">
-        <table class="table table-hover table-responsive shadow-lg" style="border-collapse: collapse" border="0">
-          <tbody>
-            <tr class="table-dark">
-              <td colspan="2">
-                <p style="text-align: center"><strong>Team 2</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p><strong>Award:</strong></p>
-              </td>
-              <td>
-                <p><strong>Honorable mention</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Team Name:</strong></td>
-              <td>
-                <p>Ischyro</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Category:</strong></td>
-              <td>
-                <p>Ministry of Women and Child Development</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Statement:</strong></td>
-              <td>
-                C2C Crowd Sourcing Online Platform for Women Empowerment
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Name Of Students:</strong></td>
-              <td>
-                <p>Meldon Dias</p>
-                <p>Kevin Lobo</p>
-                <p>Gyanendra Maurya</p>
-                <p>Yash Agarwal</p>
-                <p>Prerna Singh</p>
-                <p>Renita Lobo</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Mentors :</strong></td>
-              <td>
-                <p>Tayyabali Sayyad</p>
-                <p>Diplav Dongre</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Venue:</strong></td>
-              <td>
-                <p>Bhopal</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Winning Price:</strong></td>
-              <td>
-                <p>-</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-4">
-        <table class="table table-hover table-responsive shadow-lg" style="border-collapse: collapse" border="0">
-          <tbody>
-            <tr class="table-dark">
-              <td colspan="2">
-                <p style="text-align: center"><strong>Team 3</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p><strong>Recognition:</strong></p>
-              </td>
-              <td>
-                <p><strong>Selected for SIH Grand Finale</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Team Name:</strong></td>
-              <td>
-                <p>Kodrey</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Category:</strong></td>
-              <td>
-                <p>Ministry of Sikkim</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Statement:</strong></td>
-              <td>Intra-Department Messaging App</td>
-            </tr>
-            <tr>
-              <td><strong>Name Of Students:</strong></td>
-              <td>
-                <p>Roshan James</p>
-                <p>Chaitainyakrishna Dukkipaty</p>
-                <p>Shadrak Gurupnor</p>
-                <p>Kyle Lobo</p>
-                <p>Pratik Nerurkar</p>
-                <p>Calden Rodrigues</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Mentors :</strong></td>
-              <td>
-                <p>Manu Dwivedi</p>
-                <p>Akash Arun</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Venue:</strong></td>
-              <td>
-                <p>Hyderabad</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Winning Price:</strong></td>
-              <td>
-                <p>-</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+#sp-top2 {
+  background-color: black;
+}
 
-      <div class="row justify-content-center text-center p-1 fw-bold">
-        <p>2017-2018</p>
-      </div>
-      <div class="col-md-6">
-        <table class="table table-hover table-responsive shadow-lg" style="border-collapse: collapse" border="0">
-          <tbody>
-            <tr class="table-dark">
-              <td colspan="2">
-                <p style="text-align: center"><strong>Team 1</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p><strong>Award:</strong></p>
-              </td>
-              <td>
-                <p><strong>1st Runner Up</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Team Name:</strong></td>
-              <td>
-                <p>DBIT Vikings&nbsp;</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Category:</strong></td>
-              <td>
-                <p>Environment Forests and Climate Change</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Statement:</strong></td>
-              <td>
-                Evaluation of Health Hazards and Managementof Electronic Waste
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Name Of Students:</strong></td>
-              <td>
-                <p>Deepesh Gupta</p>
-                <p>Krupal Jadhav</p>
-                <p>Manish Jain</p>
-                <p>Deven Bhalerao</p>
-                <p>Likitha Shettigar</p>
-                <p>Atashi Khatua</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Mentors :</strong></td>
-              <td>
-                <p>Nilesh Ghavate</p>
-                <p>Tayyabali Sayyad</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Venue:</strong></td>
-              <td>
-                <p>Coimbatore&nbsp;</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Winning Price:</strong></td>
-              <td>
-                <p>₹ 75000/-</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-6">
-        <table class="table table-hover table-responsive shadow-lg" style="border-collapse: collapse" border="0">
-          <tbody>
-            <tr class="table-dark">
-              <td colspan="2">
-                <p style="text-align: center"><strong>Team 2</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p><strong>Recognition:</strong></p>
-              </td>
-              <td>
-                <p><strong>Selected for SIH Grand Finale</strong></p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Team Name:</strong></td>
-              <td>
-                <p>TaskForce141</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Category:</strong></td>
-              <td>
-                <p>Department of Road Transport and Highway.</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Problem Statement:</strong></td>
-              <td>Online Toll Payment System</td>
-            </tr>
-            <tr>
-              <td><strong>Name Of Students:</strong></td>
-              <td>
-                <p>Tanvi Pandit</p>
-                <p>Nalini Katiyar</p>
-                <p>Daksh Gupta</p>
-                <p>Amit Nijsure</p>
-                <p>Omkar Kadam</p>
-                <p>Arnab Sanyal</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Mentors :</strong></td>
-              <td>
-                <p>Neil Lasrado</p>
-                <p>Valmik Jangla</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Venue:</strong></td>
-              <td>
-                <p>Nagpur&nbsp;</p>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Winning Price:</strong></td>
-              <td>
-                <p>₹ 75000/-</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </main>
+#sp-main-body {
+  padding: 0px 0;
+}
 
-  <div class="container bgcol_pri pt-5">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="text-muted">&copy; 2021 Company, Inc</span>
-      </div>
+.sp-megamenu-parent {
+  x-overflow: auto;
+}
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter" />
-            </svg></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook" />
-            </svg></a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+.try {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
 
-  <!-- scripts start  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-  <script src="../nav.js"></script>
-  <!-- scripts end  -->
-</body>
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.button {
+  background-color: #58b9da; /* Green */
+  border: none;
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #f2f2f2;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+#sp-top-bar {
+  padding: 0px 0;
+}
+
+body {
+  font-weight: 500;
+}
+
+.sp-megamenu-parent > li > a {
+  line-height: 40px;
+  color: #ffffff;
+}
+
+#sp-header {
+  height: 40px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#sp-main-body {
+  padding: 0px 0px;
+}
+
+.nav > li > a:hover {
+  background-color: white;
+}
+
+.nav > li > a:focus {
+  background-color: black;
+}
+
+div#sp-menu {
+  width: 1250px;
+}
+
+#sp-menu > div > div > ul > li > a {
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+.sp-megamenu-parent > li.active > a {
+  background-color: #22b8f0;
+}
+/*
+    #FF4500
+    */
+table {
+  border-radius: 20px;
+  border-collapse: separate;
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid black;
+}
+#sppb-addon-1567064002570 > div > div > div > table > tbody > tr:hover {
+  background-color: black;
+  color: white;
+}
+#sppb-addon-1541238498015 > div > div > div > table > tbody > tr:hover {
+  background-color: black;
+  color: white;
+}
+tr:last-child {
+  border: none;
+}
+
+tr:nth-child(odd) {
+  background-color: #ccc;
+}
+tr:hover {
+  background-color: black;
+  color: white !important;
+}
+.table-hover tr:hover {
+  background-color: black;
+  color: white;
+}
+.moduletable {
+  background-color: black;
+}
+
+.sp-module-content {
+  background: white;
+}
+
+.sp-dropdown {
+  color: black;
+}
+
+#sp-top-bar {
+  color: black;
+}
+
+#sppb-addon-1573630816079 > div > div > div > .noHover {
+  pointer-events: none;
+}
+#sppb-addon-1534583037845 {
+  pointer-events: none;
+}
+#sppb-addon-1573630816079 {
+  pointer-events: none;
+}
+#sppb-addon-1530511906430 {
+  pointer-events: none;
+}
+#sppb-addon-1530513566904 {
+  pointer-events: none;
+}
+#sppb-addon-1530513567458 {
+  pointer-events: none;
+}
+#sppb-addon-1541771037529 tr:hover {
+  color: white;
+  background-color: black;
+}
+#section-id-1537609211999 tr:hover {
+  color: white;
+  background-color: black;
+}
+#sp-top2 > div > table > tbody > tr {
+  background-color: black;
+  color: white;
+}
+#sppb-addon-1541237200005 tr:hover {
+  color: white;
+  background-color: black;
+}
+#sppb-addon-1541238214307 tr:hover {
+  color: white;
+  background-color: black;
+}
+#sppb-addon-1581656345834 tr:hover {
+  color: white;
+  background-color: black;
+}
+
+#sppb-addon-1542349707437 tr:hover {
+  color: white;
+  background-color: black;
+}
+#sppb-addon-1582017077351 {
+  pointer-events: none;
+}
+
+#sppb-addon-1540273074302 {
+  pointer-events: none;
+}
+
+.new-look .offcanvas-menu .sp-module ul > li > a {
+  color: black;
+}
+
+.offcanvas-menu {
+  background-color: black;
+  overflow-x: visible;
+}
+
+#offcanvas-toggler > i {
+  color: white;
+}
+
+#offcanvas-toggler {
+  line-height: 75px;
+}
+
+.try tr:hover {
+  color: #fff;
+}
+
+
+tr:hover span{
+    color: #fff;
+}
+
+
+#sp-top-bar{ background-color:#000000;color:#999999; }
+#sp-header{ background-color:#000000; }
+#sp-main-body{ background-color:#f5f5f5; }
+#sp-footer{ background-color:#000000; }
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"f19b240e075376efc2d6d6df57cd0cc8","system.paths":{"root":"","base":""},"joomla.jtext":{"COM_SPPAGEBUILDER_FRONTEND_EDITOR":"Frontend Editor","COM_SPPAGEBUILDER_PREVIEW":"Preview","COM_SPPAGEBUILDER_APPLY":"Apply","COM_SPPAGEBUILDER_CANCEL":"Cancel","COM_SPPAGEBUILDER_MEDIA_MANAGER":"Media Manager","COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FILES":"Upload Files","COM_SPPAGEBUILDER_MEDIA_MANAGER_CLOSE":"Close Modal","COM_SPPAGEBUILDER_MEDIA_MANAGER_INSERT":"Insert","COM_SPPAGEBUILDER_MEDIA_MANAGER_SEARCH":"Search","COM_SPPAGEBUILDER_MEDIA_MANAGER_CANCEL":"Cancel","COM_SPPAGEBUILDER_MEDIA_MANAGER_DELETE":"Delete","COM_SPPAGEBUILDER_MEDIA_MANAGER_CONFIRM_DELETE":"You are about to permanently delete this item. 'Cancel' to stop, 'OK' to delete.","COM_SPPAGEBUILDER_MEDIA_MANAGER_LOAD_MORE":"Load More","COM_SPPAGEBUILDER_MEDIA_MANAGER_UNSUPPORTED_FORMAT":"File format not supported.","COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_MEDIA":"Browse Media","COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_FOLDERS":"Browse Folders","COM_SPPAGEBUILDER_MEDIA_MANAGER_CREATE_FOLDER":"New Folder","COM_SPPAGEBUILDER_ADDON_ICON_SELECT":"Select Icon","COM_SPPAGEBUILDER_MEDIA_MANAGER_ENTER_DIRECTORY_NAME":"Please enter the name of the directory which should be created.","COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_UPLOADING":"Uploading","COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FAILED":"Upload Failed","COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_LARGE":"This file is too large to upload.","COM_SPPAGEBUILDER_MEDIA_MANAGER_FILE_NOT_SUPPORTED":"File not supported","COM_SPPAGEBUILDER_ROW_OPTIONS":"Row Options","COM_SPPAGEBUILDER_ADD_NEW_ROW":"Add New Row","COM_SPPAGEBUILDER_DUPLICATE_ROW":"Duplicate row","COM_SPPAGEBUILDER_DISABLE_ROW":"Disable Row","COM_SPPAGEBUILDER_ENABLE_ROW":"Enable Row","COM_SPPAGEBUILDER_COPY_ROW":"Copy Row","COM_SPPAGEBUILDER_ROW_COPIED":"Copied","COM_SPPAGEBUILDER_PASTE_ROW":"Paste Row","COM_SPPAGEBUILDER_DELETE_ROW":"Delete Row","COM_SPPAGEBUILDER_ROW_TOGGLE":"Toggle Row","COM_SPPAGEBUILDER_DELETE_ROW_CONFIRMATION":"Do you really want to delete this row?","COM_SPPAGEBUILDER_ROW_COLUMNS_MANAGEMENT":"Add\/Manage Columns","COM_SPPAGEBUILDER_ROW_COLUMNS_CUSTOM":"Custom","COM_SPPAGEBUILDER_ROW_COLUMNS_GENERATE":"Generate","COM_SPPAGEBUILDER_IMPORT_PAGE":"Import","COM_SPPAGEBUILDER_IMPORT_PAGE_ALT":"Import","COM_SPPAGEBUILDER_EXPORT_PAGE":"Export","COM_SPPAGEBUILDER_PAGE_TEMPLATES":"Page Templates","COM_SPPAGEBUILDER_UNDO":"Undo","COM_SPPAGEBUILDER_REDO":"Redo","COM_SPPAGEBUILDER_SAVE":"Save","COM_SPPAGEBUILDER_SAVE_ROW":"Save Row","COM_SPPAGEBUILDER_ROW_COLUMNS_OPTIONS":"Column Options","COM_SPPAGEBUILDER_DELETE_COLUMN":"Delete Column","COM_SPPAGEBUILDER_ADD_NEW_ADDON":"Add New Addon","COM_SPPAGEBUILDER_ADDON":"Addon","COM_SPPAGEBUILDER_DELETE_ADDON":"Delete Addon","COM_SPPAGEBUILDER_DUPLICATE_ADDON":"Clone Addon","COM_SPPAGEBUILDER_EDIT_ADDON":"Edit Addon","COM_SPPAGEBUILDER_ADDONS_LIST":"Addons List","COM_SPPAGEBUILDER_ALL":"All","COM_SPPAGEBUILDER_MODAL_CLOSE":"Close Modal","COM_SPPAGEBUILDER_DISABLE_COLUMN":"Disable Column","COM_SPPAGEBUILDER_ENABLE_COLUMN":"Enable Column","COM_SPPAGEBUILDER_YES":"Yes","COM_SPPAGEBUILDER_NO":"No","COM_SPPAGEBUILDER_PAGE_TEMPLATES_LIST":"Template List","COM_SPPAGEBUILDER_PAGE_TEMPLATE_LOAD":"Import","COM_SPPAGEBUILDER_ENABLE_ADDON":"Enable Addon","COM_SPPAGEBUILDER_DISABLE_ADDON":"Disable Addon","COM_SPPAGEBUILDER_ADDON_PARENT_COLUMN":"Parent Column","COM_SPPAGEBUILDER_ADD_NEW_INNER_ROW":"Add Inner Row","COM_SPPAGEBUILDER_MOVE_COLUMN":"Move Column","COM_SPPAGEBUILDER_DAY":"Day","COM_SPPAGEBUILDER_DAYS":"Days","COM_SPPAGEBUILDER_HOUR":"Hour","COM_SPPAGEBUILDER_HOURS":"Hours","COM_SPPAGEBUILDER_MINUTE":"Minute","COM_SPPAGEBUILDER_MINUTES":"Minutes","COM_SPPAGEBUILDER_SECOND":"Second","COM_SPPAGEBUILDER_SECONDS":"Seconds","COM_SPPAGEBUILDER_ADDON_OPTIN_FORM_SUBCSCRIBE":"Subscribe","COM_SPPAGEBUILDER_ADDON_AJAX_CONTACT_NAME":"Name","COM_SPPAGEBUILDER_ADDON_AJAX_CONTACT_EMAIL":"Email"}}</script>
+	<script src="/media/system/js/core.js?61e1a04a2dcac1ed91419ee1188fadb9" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?61e1a04a2dcac1ed91419ee1188fadb9" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?61e1a04a2dcac1ed91419ee1188fadb9" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?61e1a04a2dcac1ed91419ee1188fadb9" type="text/javascript"></script>
+	<script src="/components/com_sppagebuilder/assets/js/sppagebuilder.js" type="text/javascript"></script>
+	<script src="/templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="/templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="/templates/shaper_helix3/js/frontend-edit.js" type="text/javascript"></script>
+	<script src="/components/com_sppagebuilder/assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function($){'use strict';
+				$( '#sppb-addon-1530510336416' + ' .sppb-addon-accordion .sppb-panel-heading').removeClass('active');
+				$( '#sppb-addon-1530510336416' + ' .sppb-addon-accordion .sppb-panel-collapse').hide();
+			});
+var sp_preloader = '1';
+
+var sp_gotop = '1';
+
+var sp_offanimation = 'drarkplus';
+
+	</script>
+	<meta content="Recognition" property="og:title" />
+	<meta content="website" property="og:type"/>
+	<meta content="https://comps.dbit.in/index.php/student/recognition" property="og:url" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131244438-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131244438-1');
+</script>
+
+    </head>
+
+    <body class="site com-sppagebuilder view-page no-layout no-task itemid-126 en-gb ltr  sticky-header layout-boxed off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <div class="sp-pre-loader"><div class="sp-loader-circle"></div></div><section id="sp-top-bar" class=" hidden-xs hidden-sm"><div class="container"><div class="row"><div id="sp-top2" class="col-sm-12 col-md-12 hidden-sm hidden-xs"><div class="sp-column ">	<table cellpadding="0" cellspacing="0" class="moduletable">
+			<tr>
+			<td>
+				<ul class="nav menunav navbar-nav">
+<li class="item-164">		<a href="http://www.dbit.in/" rel="noopener noreferrer" target="_blank" > DBIT Home</a></li><li class="item-165">		<a href="http://parent.dbit.in/" rel="noopener noreferrer" target="_blank" > Parent Login</a></li><li class="item-186">		<a href="https://alumni.dbit.in/" rel="noopener noreferrer" target="_blank" > Alumni</a></li><li class="item-166">		<a href="http://moodle.dbit.in/" rel="noopener noreferrer" target="_blank" > Moodle</a></li><li class="item-167">		<a href="http://dbcldrive.dbit.in/" rel="noopener noreferrer" target="_blank" > DBCL Drive</a></li><li class="item-187">		<a href="http://dbitlrc.dbit.in/" rel="noopener noreferrer" target="_blank" > Library</a></li></ul>
+			</td>
+		</tr>
+		</table>
+	<ul class="sp-contact-info"></ul></div></div></div></div></section><section id="sp-section-2" class=" hidden-md"><div class="container"><div class="row"><div id="sp-topmob" class="col-sm-12 col-md-12 hidden-md hidden-lg"><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div class="mod-sppagebuilder  sp-page-builder" >
+	<div class="page-content">
+		<div id="section-id-1530688315563" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1530688315562" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1530688315566" class="clearfix" ><div class="sppb-addon sppb-addon-text-block 0  "><div class="sppb-addon-content"><style type="text/css">html, body {
+  height: 100%;
+  margin: 0;
+}
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+justify-content: center;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+color:white;
+}
+
+.box2{
+padding:0px, 0px, 0px, 20px;
+}</style>
+<div class="grid2x2">
+<div class="box box1">
+<div><a style="color: white; font-weight: bold;" href="http://www.dbit.in/" target="_blank" rel="noopener">DBIT Home</a></div>
+</div>
+<div class="box box2">
+<div><a style="color: white; font-weight: bold;" href="http://parent.dbit.in/" target="_blank" rel="noopener">Parent Login</a></div>
+</div>
+<div class="box box3">
+<div><a style="color: white; font-weight: bold;" href="http://moodle.dbit.in/" target="_blank" rel="noopener">Moodle</a></div>
+</div>
+<div class="box box4">
+<div><a style="color: white; font-weight: bold;" href="https://dbcldrive.dbit.in/" target="_blank" rel="noopener">DBCL Drive</a></div>
+</div>
+</div></div></div></div></div></div></div></div></div></div><style type="text/css">.sp-page-builder .page-content #section-id-1530510336413{padding-top: 50px;padding-right: 0px;padding-bottom: 250px;padding-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;}#column-id-1530510336412{box-shadow: 0 0 0 0 #fff;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1637146620336 {}}@media (max-width: 767px) {#sppb-addon-1637146620336 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336448 {}}@media (max-width: 767px) {#sppb-addon-1530510336448 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510810528 {}}@media (max-width: 767px) {#sppb-addon-1530510810528 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336442 {}}@media (max-width: 767px) {#sppb-addon-1530510336442 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336443 {}}@media (max-width: 767px) {#sppb-addon-1530510336443 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336416 {}}@media (max-width: 767px) {#sppb-addon-1530510336416 {}}.sp-page-builder .page-content #section-id-1530089994045{margin-top: 10px;margin-right: -55px;margin-left: -55px;}#column-id-1530089994044{box-shadow: 0 0 0 0 #fff;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530089994048 {}}@media (max-width: 767px) {#sppb-addon-1530089994048 {}}#sppb-addon-1530089994048 img{}.sp-page-builder .page-content #section-id-1530688315563{margin-top: 0px;margin-right: -15px;margin-bottom: 0px;margin-left: -15px;background-color:#000000;}#column-id-1530688315562{box-shadow: 0 0 0 0 #fff;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530688315566 {}}@media (max-width: 767px) {#sppb-addon-1530688315566 {}}</style>	</div>
+</div>
+</div></div></div></div></div></div></section><section id="sp-banner"><div class="container"><div class="row"><div id="sp-banner" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div class="mod-sppagebuilder  sp-page-builder" >
+	<div class="page-content">
+		<div id="section-id-1530089994045" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1530089994044" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1530089994048" class="clearfix" ><div class="sppb-addon sppb-addon-single-image  "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><img class="sppb-img-responsive" src="/images/2018/08/21/comps-banner-min-min.jpg" alt="comps-banner-min-min.jpg" title=""></div></div></div></div></div></div></div></div></div></div><style type="text/css">.sp-page-builder .page-content #section-id-1530510336413{padding-top: 50px;padding-right: 0px;padding-bottom: 250px;padding-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;}#column-id-1530510336412{box-shadow: 0 0 0 0 #fff;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1637146620336 {}}@media (max-width: 767px) {#sppb-addon-1637146620336 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336448 {}}@media (max-width: 767px) {#sppb-addon-1530510336448 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510810528 {}}@media (max-width: 767px) {#sppb-addon-1530510810528 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336442 {}}@media (max-width: 767px) {#sppb-addon-1530510336442 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336443 {}}@media (max-width: 767px) {#sppb-addon-1530510336443 {}}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530510336416 {}}@media (max-width: 767px) {#sppb-addon-1530510336416 {}}.sp-page-builder .page-content #section-id-1530089994045{margin-top: 10px;margin-right: -55px;margin-left: -55px;}#column-id-1530089994044{box-shadow: 0 0 0 0 #fff;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1530089994048 {}}@media (max-width: 767px) {#sppb-addon-1530089994048 {}}#sppb-addon-1530089994048 img{}</style>	</div>
+</div>
+</div></div></div></div></div></div></section><header id="sp-header"><div class="row"><div id="sp-menu" class="col-xs-12 col-sm-12 col-md-12"><div class="sp-column ">			<div class='sp-megamenu-wrapper'>
+				<a id="offcanvas-toggler" class="visible-sm visible-xs" aria-label="Helix Megamenu Options" href="#"><i class="fa fa-bars" aria-hidden="true" title="Helix Megamenu Options"></i></a>
+				<ul class="sp-megamenu-parent hidden-sm hidden-xs"><li class="sp-menu-item"><a  href="/index.php"  >Home</a></li><li class="sp-menu-item"><a  href="/index.php/about-us"  >About Us</a></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Examination</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/examination/time-table"  >Time Table</a></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Rank Holders</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/images/rankholder.pdf" rel="noopener noreferrer" target="_blank" >Internal Assessment</a></li><li class="sp-menu-item"><a  href="/index.php/examination/rank-holders/external"  >MU Examination</a></li></ul></div></div></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Academics</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/academics/timetable"  >Timetable</a></li><li class="sp-menu-item sp-has-child"><a  href="/images/Syllabus/Comp_CBCGS_2016.pdf"  >Syllabus</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/images/2021/SEM-3-new.pdf" rel="noopener noreferrer" target="_blank" >Second Year</a></li><li class="sp-menu-item"><a  href="/images//2021/TE-rev2019syllabus.pdf" rel="noopener noreferrer" target="_blank" >Third Year</a></li><li class="sp-menu-item"><a  href="/images//2019/BE_Comp_Engg__CBCGS_Rev._2016.pdf" rel="noopener noreferrer" target="_blank" >Final Year</a></li></ul></div></div></li><li class="sp-menu-item"><a  href="/index.php/academics/corporate-advisory-board"  >Corporate Advisory Board</a></li><li class="sp-menu-item"><a  href="/index.php/academics/facilities"  >MOU</a></li><li class="sp-menu-item sp-has-child"><a  href="#"  >University Question Papers</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/academics/university-question-papers/second-year"  >Second Year</a></li><li class="sp-menu-item"><a  href="/index.php/academics/university-question-papers/third-year"  >Third Year</a></li><li class="sp-menu-item"><a  href="/index.php/academics/university-question-papers/final-year"  >Final Year</a></li></ul></div></div></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Faculty</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/faculty/profile"  >Profile</a></li><li class="sp-menu-item"><a  href="/index.php/faculty/recognition"  >Recognition</a></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Research</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/faculty/research/minor-grants"  >Minor Grants</a></li><li class="sp-menu-item"><a  href="/index.php/faculty/research/research-publications"  >Research Publications</a></li></ul></div></div></li></ul></div></div></li><li class="sp-menu-item sp-has-child active"><a  href="#"  >Student</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item current-item active"><a  href="/index.php/student/recognition"  >Recognition</a></li><li class="sp-menu-item"><a  href="/index.php/student/undergraduate-project"  >Undergraduate Project</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Co-Curricular Activities</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/acm-student-chapter"  >ACM - Student Chapter</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/training-workshop"  >Guest Sessions</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/training-workshop-2"  >Alumni Interaction</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/innovex"  >Major Project / Mini Project</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/certification-program"  >Certification / Workshop / Outreach Program</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/industrial-visit"  >Industrial Visit</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/department-day"  >Department Day</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/programming-contest"  >Programming Contest</a></li><li class="sp-menu-item"><a  href="/index.php/co-curricular-activities/tech-other"  >Other</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a  href="#"  >Placement</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  href="/index.php/placement-internship/internship-record" rel="noopener noreferrer" target="_blank" >Internship Record</a></li><li class="sp-menu-item"><a  href="/index.php/placement-internship/placement-record"  >Placement Record</a></li></ul></div></div></li></ul>			</div>
+		</div></div></div></header><section id="sp-main-body"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column "><div id="system-message-container">
+	</div>
+
+<div id="sp-page-builder" class="sp-page-builder  page-13">
+
+	
+	<div class="page-content">
+				<section id="section-id-1530510336413" class="sppb-section "  ><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1530510336412" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1530510336416" class="clearfix" ><div class="sppb-addon sppb-addon-accordion "><div class="sppb-addon-content"><div class="sppb-panel-group"><div class="sppb-panel sppb-panel-default"><div class="sppb-panel-heading active"><span class="sppb-panel-title">Innovex  Winners</span><span class="sppb-toggle-direction"><i class="fa fa-chevron-right"></i></span></div><div class="sppb-panel-collapse"><div class="sppb-panel-body"><div id="sppb-addon-1637146620336" class="clearfix" ><div class="sppb-addon sppb-addon-text-block 0  "><div class="sppb-addon-content"><div style="overflow-x: auto;">
+<table style="width: 1043px; height: 362px; float: left;">
+<tbody>
+<tr class="alert-success">
+<td colspan="4">The winners for INNOVEX 2021 from Computer Engineering Department are:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Rank</strong></td>
+<td style="text-align: center;"><strong>Project Title</strong></td>
+<td style="text-align: center;"><strong>Project Guide</strong></td>
+<td style="text-align: center;"><strong>Student Team</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">1</td>
+<td rowspan="2">AR Smart Navigation System</td>
+<td rowspan="2">Ms. Priya Kaul</td>
+<td>Kevin Dsa</td>
+</tr>
+<tr>
+<td>Tina Sayagopu</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="3">2</td>
+<td rowspan="3">Student Attention Monitoring System using Python and Computer Vision&nbsp;</td>
+<td rowspan="3">Dr. Amiya K. Tripathy</td>
+<td>Alan Tom</td>
+</tr>
+<tr>
+<td>Sasha Pais</td>
+</tr>
+<tr>
+<td>Tejaswini Kshrisagar</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="3">2</td>
+<td rowspan="3">DAASH-Drop Attack Alert System for Home Environment</td>
+<td rowspan="3">Ms. Sejal Chopra</td>
+<td>Lourd Bharathy</td>
+</tr>
+<tr>
+<td>Samara Pires</td>
+</tr>
+<tr>
+<td>Sonia Rodrigues</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="3">3</td>
+<td rowspan="3">Enhancing Deep Fingerprinting Attack On Tor Network Using Lottery Ticket Hypothesis</td>
+<td rowspan="3">Ms. Sana Shaikh</td>
+<td>Sayali Kadam</td>
+</tr>
+<tr>
+<td>Vaibhav Mishra</td>
+</tr>
+<tr>
+<td>Sarthak Tripathi</td>
+</tr>
+<tr>
+<td rowspan="3">Viewer Choice Award</td>
+<td rowspan="3">Nutrition lookup system for home cook food vendors using NLP.</td>
+<td rowspan="3">Ms. Ditty Varghese</td>
+<td>Wayne Fernandes</td>
+</tr>
+<tr>
+<td>Harshada Daund</td>
+</tr>
+<tr>
+<td>Vaishnavi Gadgil</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div></div><div class="sppb-panel sppb-panel-default"><div class="sppb-panel-heading"><span class="sppb-panel-title">Technical Paper Presentations in Conferences</span><span class="sppb-toggle-direction"><i class="fa fa-chevron-right"></i></span></div><div class="sppb-panel-collapse" style="display: none;"><div class="sppb-panel-body"><div id="sppb-addon-1530510336448" class="clearfix" ><div class="sppb-addon sppb-addon-text-block 0  "><div class="sppb-addon-content"><div style="overflow-x: auto;">
+<table class="try">
+<tbody>
+<tr><th>Sr No.</th><th>Authors</th><th>Technical Paper</th><th>Conference</th><th>Date</th></tr>
+<tr>
+<td>1</td>
+<td>P. Uttekar, M. Gowardipe, J. Devasia, N L Sarda, J. Shaha, A.K. Tripathy, B. Patil, M. Pati</td>
+<td>A Watershed and Equity Based Water Distribution For Villages</td>
+<td>Chikotra Valley International Conference on Technological Advances in Climate-smart Agriculture and Sustainability</td>
+<td>16-18th January 2017</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sejal Chopra, Amiya Tripathy, Aaron Alphonso, Milson Carvalho, Christi Sancia</td>
+<td>Brain Computer Interface and Electro Stimulation of muscles to assist paralyzed patients in limited movement of hands</td>
+<td>2nd Biennial International Conference on Nascent Technologies in Engineering</td>
+<td>27-28th January 2017</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Spencer Kinny, Kalpita Wagaskar, Amiya Tripathy</td>
+<td>Endorse Your Brand: Self Development Tool for Agile Employment</td>
+<td>2nd IEEE International Conference on Communication Systems, Control And IT Applications</td>
+<td>7th April 2017</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Deepali Kayande, Elsa Rebello, Shweta Sharma, Monica Tandel</td>
+<td>Overview of a Payment Solution for NFC- Enabled Mobile Phones</td>
+<td>IEEE ICTBIG2016</td>
+<td>18-19th November 2016</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div></div><div class="sppb-panel sppb-panel-default"><div class="sppb-panel-heading"><span class="sppb-panel-title">Contest Winners</span><span class="sppb-toggle-direction"><i class="fa fa-chevron-right"></i></span></div><div class="sppb-panel-collapse" style="display: none;"><div class="sppb-panel-body"><div id="sppb-addon-1530510810528" class="clearfix" ><div class="sppb-addon sppb-addon-text-block 0  "><div class="sppb-addon-content"><div style="overflow-x: auto;">
+<table class="try">
+<tbody>
+<tr><th>Sr No.</th><th>Competition</th><th>Rank</th><th>Project</th><th>Participants</th></tr>
+<tr>
+<td>1</td>
+<td>Innovex 2017-18</td>
+<td>1</td>
+<td>Bosco.AI</td>
+<td>Faisal Khan, Royston Lobo, Swapnil Naik</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Innovex 2017-18</td>
+<td>2</td>
+<td>Traffic Analysis and Road Accident Prediction<br /> using QGIS</td>
+<td>Jovita Mathias, Shubhada Medhe, Raghasri Raghavan</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Innovex 2017-18</td>
+<td>3</td>
+<td>An Immersive Interior designing solution based<br /> on the principles of Mixed Reality</td>
+<td>Vivek Dsouza, Dayton Xavier, Dean Joyson</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Innovex 2017-18</td>
+<td>3</td>
+<td>IOT for Resource-Constraints and Emergent<br /> users using Physical Web</td>
+<td>Khushboo M., Pratiksha K., Pooja U.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Smart City Smart Idea Contest 2018</td>
+<td>1</td>
+<td>JUST-TAP : A BUS TICKETING SYSTEM USING NFC</td>
+<td>Bianca Alphonso, Sarita Saldanha and Sisil Sunny</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Smart City Smart Idea Contest 2018</td>
+<td>Consolation</td>
+<td>Water Information System: GIS Based Solution</td>
+<td>Preetham Monis, Linson Miranda and Ashdeep Kaur Vij</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Smart City Contest, VESIT</td>
+<td>1</td>
+<td>Development project of Mumbai</td>
+<td>Joel Badigar, Melisha D'souza, Jennifer Johnson</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Innovex 2016-17</td>
+<td>1</td>
+<td>Computer Assist for Paralysed using EEG</td>
+<td>Akash Gund, Siddhant Reddy, Bronson Mendonca Guides: Ms. Sejal Chopra and Ms. Kalpita Wagaskar</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Innovex 2016-17</td>
+<td>2</td>
+<td>Digi-assist : Voice for deaf and mute</td>
+<td>Tejaswini Koilakuntla, Sonam M.Mutalik Desai, Ramya Ramakrishnan Guide: Ms. Dipti Jadhav</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div></div><div class="sppb-panel sppb-panel-default"><div class="sppb-panel-heading"><span class="sppb-panel-title">Student Achievements</span><span class="sppb-toggle-direction"><i class="fa fa-chevron-right"></i></span></div><div class="sppb-panel-collapse" style="display: none;"><div class="sppb-panel-body"><div id="sppb-addon-1530510336442" class="clearfix" ><div class="sppb-addon sppb-addon-text-block 0  "><h3 class="sppb-addon-title">Campus Ambassadors</h3><div class="sppb-addon-content"><div style="overflow-x: auto;">
+<table class="try">
+<tbody>
+<tr><th>Sr No.</th><th>Company Name</th><th>Student Name</th></tr>
+<tr>
+<td>1</td>
+<td>L&amp;T Campus Ambassador</td>
+<td>Chinmay Gadgil</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TCS Campus Ambassador</td>
+<td>Spencer Kinny</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Dell Campus Ambassador</td>
+<td>Alistair Lobo</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div><div id="sppb-addon-1530510336443" class="clearfix" ><div class="sppb-addon sppb-addon-text-block 0  "><h3 class="sppb-addon-title">Student Initiatives</h3><div class="sppb-addon-content"><div style="overflow-x: auto;">
+<table class="try">
+<tbody>
+<tr><th>Details</th></tr>
+<tr>
+<td>Participation of students in Zee 24 Taas Young Innovator Awards 2016.</td>
+</tr>
+<tr>
+<td>Participation and qualification of 6 teams for TCS codevita Competition.</td>
+</tr>
+<tr>
+<td>Participation and selection of students in Smart India Hackathon 2017.</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>			</div>
+</div>
+</div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">© 2018 Department Of Computer Engineering. All Rights Reserved. </span></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="/index.php" > Home</a></li><li class="item-102"><a href="/index.php/about-us" > About Us</a></li><li class="item-106  deeper parent">		<a  href="#"  > Examination</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-106"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-106"><li class="item-115"><a href="/index.php/examination/time-table" > Time Table</a></li><li class="item-123  deeper parent">		<a  href="#"  > Rank Holders</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-123"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-123"><li class="item-143">		<a href="/images/rankholder.pdf" rel="noopener noreferrer" target="_blank" > Internal Assessment</a></li><li class="item-144"><a href="/index.php/examination/rank-holders/external" > MU Examination</a></li></ul></li></ul></li><li class="item-103  deeper parent">		<a  href="#"  > Academics</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-103"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-103"><li class="item-129"><a href="/index.php/academics/timetable" > Timetable</a></li><li class="item-130  deeper parent">		<a  href="/images/Syllabus/Comp_CBCGS_2016.pdf"  > Syllabus</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-130"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-130"><li class="item-135">		<a href="/images/2021/SEM-3-new.pdf" rel="noopener noreferrer" target="_blank" > Second Year</a></li><li class="item-136">		<a href="/images//2021/TE-rev2019syllabus.pdf" rel="noopener noreferrer" target="_blank" > Third Year</a></li><li class="item-137">		<a href="/images//2019/BE_Comp_Engg__CBCGS_Rev._2016.pdf" rel="noopener noreferrer" target="_blank" > Final Year</a></li></ul></li><li class="item-131"><a href="/index.php/academics/corporate-advisory-board" > Corporate Advisory Board</a></li><li class="item-128"><a href="/index.php/academics/facilities" > MOU</a></li><li class="item-133  deeper parent">		<a  href="#"  > University Question Papers</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-133"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-133"><li class="item-140"><a href="/index.php/academics/university-question-papers/second-year" > Second Year</a></li><li class="item-141"><a href="/index.php/academics/university-question-papers/third-year" > Third Year</a></li><li class="item-142"><a href="/index.php/academics/university-question-papers/final-year" > Final Year</a></li></ul></li></ul></li><li class="item-104  deeper parent">		<a  href="#"  > Faculty</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-104"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-104"><li class="item-110"><a href="/index.php/faculty/profile" > Profile</a></li><li class="item-111"><a href="/index.php/faculty/recognition" > Recognition</a></li><li class="item-112  deeper parent">		<a  href="#"  > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-112"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-112"><li class="item-113"><a href="/index.php/faculty/research/minor-grants" > Minor Grants</a></li><li class="item-229"><a href="/index.php/faculty/research/research-publications" > Research Publications</a></li></ul></li></ul></li><li class="item-105  active deeper parent">		<a  href="#"  > Student</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-105"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-105"><li class="item-126  current active"><a href="/index.php/student/recognition" > Recognition</a></li><li class="item-127"><a href="/index.php/student/undergraduate-project" > Undergraduate Project</a></li></ul></li><li class="item-107  deeper parent">		<a  href="#"  > Co-Curricular Activities</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-107"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-107"><li class="item-148"><a href="/index.php/co-curricular-activities/acm-student-chapter" > ACM - Student Chapter</a></li><li class="item-120"><a href="/index.php/co-curricular-activities/training-workshop" > Guest Sessions</a></li><li class="item-228"><a href="/index.php/co-curricular-activities/training-workshop-2" > Alumni Interaction</a></li><li class="item-152"><a href="/index.php/co-curricular-activities/innovex" > Major Project / Mini Project</a></li><li class="item-121"><a href="/index.php/co-curricular-activities/certification-program" > Certification / Workshop / Outreach Program</a></li><li class="item-122"><a href="/index.php/co-curricular-activities/industrial-visit" > Industrial Visit</a></li><li class="item-151"><a href="/index.php/co-curricular-activities/department-day" > Department Day</a></li><li class="item-154"><a href="/index.php/co-curricular-activities/programming-contest" > Programming Contest</a></li><li class="item-184"><a href="/index.php/co-curricular-activities/tech-other" > Other</a></li></ul></li><li class="item-108  deeper parent">		<a  href="#"  > Placement</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-108"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-108"><li class="item-116"><a href="/index.php/placement-internship/internship-record" target="_blank" > Internship Record</a></li><li class="item-117"><a href="/index.php/placement-internship/placement-record" > Placement Record</a></li></ul></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+                    <a href="javascript:void(0)" class="scrollup" aria-label="Go To Top">&nbsp;</a>
+        
+    </body>
 </html>
