@@ -89,7 +89,7 @@ footer.innerHTML =
 
 <!-- Copyright -->
 <div class="text-center p-4" style="color:white" >
- © 2021 Copyright :
+ © 2023 Copyright :
  <a class="" style="text-decoration: none; color: white;"> <a href="/students/contributors.html" style="text-decoration:none; color: white;">Desgined and Maintained by DBIT Website Maintenance Team</a></a>
 </div>
 <!-- Copyright -->
