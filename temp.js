@@ -25,12 +25,10 @@ nav.innerHTML = `<div class="container-fluid">
                 <a class="nav-link top-nav-text" href="https://elearn.dbit.in/">E-Learn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="http://dbitlrc.dbit.in/">Library</a>
+                <a class="nav-link top-nav-text" href="https://workshop.opensourcetutorials.in/?redirect=0">Aspire</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="https://dbcldrive.dbit.in/"
-                  >DBCL Drive</a
-                >
+                <a class="nav-link top-nav-text" href="http://dbitlrc.dbit.in/">Library</a>
               </li>
             </ul>
           </div>
