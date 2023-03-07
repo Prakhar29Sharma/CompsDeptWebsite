@@ -84,7 +84,7 @@ nav.innerHTML = `<div class="container-fluid">
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  ACADEMICS
+                  ACADEMICS  <span class="badge bg-info">New</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -92,7 +92,7 @@ nav.innerHTML = `<div class="container-fluid">
                   </li>
                   <li><a class="dropdown-item" href="/academics/exam-calendar.html">Exam Timetable</a></li>
                   <li><a class="dropdown-item" href="/academics/timetable.html">Timetable</a></li>
-                  <li><a class="dropdown-item" href="/academics/academic_syllabus.html">Syllabus</a></li>
+                  <li><a class="dropdown-item" href="/academics/academic_syllabus.html">Syllabus <span class="badge bg-info">New</span>g</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown text-center">
