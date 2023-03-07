@@ -88,10 +88,10 @@ nav.innerHTML = `<div class="container-fluid">
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="/academics/academic-calendar.html">Academic Calender</a>
+                    <a class="dropdown-item" href="/assets/pdf/academic_calender.pdf" target="_blank">Academic Calender</a>
                   </li>
-                  <li><a class="dropdown-item" href="/academics/exam-calendar.html">Exam Timetable</a></li>
-                  <li><a class="dropdown-item" href="/academics/timetable.html">Timetable</a></li>
+                  <li><a class="dropdown-item" href="https://www.dbit.in/timetable.html" target="_blank">Exam Timetable</a></li>
+                  <li><a class="dropdown-item" href="/assets/pdf/DBIT-COMP-TT_even_ver2_classes.pdf">Timetable</a></li>
                   <li><a class="dropdown-item" href="/academics/academic_syllabus.html">Syllabus <span class="badge bg-info">New</span></a></li>
                 </ul>
               </li>
