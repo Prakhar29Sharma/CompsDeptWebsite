@@ -40,7 +40,7 @@ footer.innerHTML =
          > <a href="https://www.dbit.in/nisp.html" class="text-reset" style="text-decoration: none;  text-align: left;">NISP</a>
        </p>
        <p>
-         > <a href="/students/contributors.html" class="text-reset" style="text-decoration: none;  text-align: left;">CONTRIBUTORS</a>
+         > <a href="/footerlink/contributor.html" class="text-reset" style="text-decoration: none;  text-align: left;">CONTRIBUTORS</a>
        </p>
      </div>
      <!-- Grid column -->
@@ -49,7 +49,9 @@ footer.innerHTML =
      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color:#e5e5e5; text-align: left;
      ">
        <!-- Links -->
+
        <p  style=" text-align: left;"><b><h5 style=" text-align: left;" >Department of Computer Science Engineering</h5></b><br>
+
 
          1st Floor, C Wing <br>
          
@@ -89,7 +91,7 @@ footer.innerHTML =
 
 <!-- Copyright -->
 <div class="text-center p-4" style="color:white" >
- © 2021 Copyright :
+ © 2023 Copyright :
  <a class="" style="text-decoration: none; color: white;"> <a href="/students/contributors.html" style="text-decoration:none; color: white;">Desgined and Maintained by DBIT Website Maintenance Team</a></a>
 </div>
 <!-- Copyright -->

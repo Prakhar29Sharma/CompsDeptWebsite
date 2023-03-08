@@ -25,12 +25,10 @@ nav.innerHTML = `<div class="container-fluid">
                 <a class="nav-link top-nav-text" href="https://elearn.dbit.in/">E-Learn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="http://dbitlrc.dbit.in/">Library</a>
+                <a class="nav-link top-nav-text" href="https://workshop.opensourcetutorials.in/?redirect=0">Aspire</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="https://dbcldrive.dbit.in/"
-                  >DBCL Drive</a
-                >
+                <a class="nav-link top-nav-text" href="http://dbitlrc.dbit.in/">Library</a>
               </li>
             </ul>
           </div>
@@ -90,9 +88,14 @@ nav.innerHTML = `<div class="container-fluid">
                   <li>
                     <a class="dropdown-item" href="/assets/pdf/academic_calender.pdf" target="_blank">Academic Calender</a>
                   </li>
+<!-- changes made by adding direct links to some  -->
                   <li><a class="dropdown-item" href="https://www.dbit.in/timetable.html" target="_blank">Exam Timetable</a></li>
-                  <li><a class="dropdown-item" href="/assets/pdf/DBIT-COMP-TT_even_ver2_classes.pdf">Timetable</a></li>
-                  <li><a class="dropdown-item" href="/academics/academic_syllabus.html">Syllabus <span class="badge bg-info">New</span></a></li>
+                  <li><a class="dropdown-item" href="/academics/mou.html">MOU</a></li>
+                  <li><a class="dropdown-item" href="/academics/corporate_advisory.html">Corporate Advisory</a></li>
+                     <li><a class="dropdown-item" href="/assets/pdf/DBIT-COMP-TT_even_ver2_classes.pdf">Timetable</a></li>
+                   <li><a class="dropdown-item" href="/academics/academic_syllabus.html">Syllabus <span class="badge bg-info">New</span></a></li>
+                  <li><a class="dropdown-item" href="/academics/university_question_papers.html">University Question Papers</a></li>
+
                 </ul>
               </li>
               <li class="nav-item dropdown text-center">
@@ -152,7 +155,10 @@ nav.innerHTML = `<div class="container-fluid">
                 <li><a class="dropdown-item" href="/cocurricular/guestsession.html">Guest Sessions</a></li>
                 <li><a class="dropdown-item" href="/cocurricular/industrial_visit.html">Industrial Visits</a></li>
                 <li><a class="dropdown-item" href="/cocurricular/events.html">Certification & Workshop programs</a></li>
+                <li><a class="dropdown-item" href="/cocurricular/innovex.html">Major Project / Mini Project</a></li>
+                <li><a class="dropdown-item" href="/cocurricular/department_day.html">Department Day</a></li>
                 <li><a class="dropdown-item" href="/cocurricular/programming_contest.html">Programming Contests</a></li>
+                <li><a class="dropdown-item" href="/cocurricular/others.html">Others</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown text-center">
