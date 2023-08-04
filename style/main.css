@@ -54,3 +54,18 @@
 .table > tbody > tr:last-child{
     border-color: white !important;
 }
+
+.email_links {
+    text-decoration: none !important;
+    color: #212529;
+}
+
+.email_links:hover {
+    text-decoration: none !important;
+    color: #796c6c;
+}
+
+.links {
+    text-decoration: none !important;
+    color: #212529;
+}
